@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+ 
+ 
+ <head>
+ <style>
+    body {	
+    		font-family:sans-serif;
+			padding:100px;
+			margin:50px;
+			
+			background: linear-gradient(to right, #2b5876, #4e4376);
+			color:white;
+
+
+				}
+	title {
+			text-align:center;
+				}
+	ul {	
+			text-align:center;
+			list-style: none;
+			padding:20px;
+			font-size:20px;
+			line-height:40px;	
+				}
+	a {
+		text-align:center;
+		color : white;
+		font-size:18px;
+				}
+	h2 {
+			font-size: 47px;
+			padding-top: 50px;
+			padding-left: 100px;
+	}
+	#first {
+			padding-top: 100px;
+	}
+	.about {padding-top: 80px;
+			text-align: left;
+			line-height: 27px;
+			font-size: 25px;
+	}
+
+	.contact {
+				font-size: 45px;
+
+				padding-top: 50px;
+				padding-left: 100px
+	}
+	.contact1 {font-size: 45px;
+				padding-top: 15px;
+				padding-left: 100px
+			}
+ </style>
+
+      <title> 
+				
+			  {% block title %}  
+			
+			
+			  {% endblock title %}
+	  </title>
+ 
+ 
+ </head>
+ 
+
+<body>
+		
+		
+  
+		<h1>Sreepathy Institute of Management and Technology, Vavannoor	</h1>
+      {% block body %}
+   
+
+      {% endblock body %}
+
+	<p id="first"><a href="about/" > About </a></p>
+	<p><a href="contact/" > Contact Us </a></p>
+	<p><a href="dept/" > Departments </a></p>
+ 
+ </body>
+
+</html>
